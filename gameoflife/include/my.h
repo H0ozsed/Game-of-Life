@@ -18,6 +18,14 @@
     #include <sys/stat.h>
 
 int my_strlen(const char *str);
+void *my_memcpy(void *dest, const void *src, size_t n);
+int open_file(const char *file);
+char *read_file(int fd);
+void *my_realloc(void *ptr, size_t old_size, size_t new_size);
+
+int gameoflife(int ac, char **av);
+
+
 
 
 #endif

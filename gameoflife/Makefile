@@ -10,6 +10,7 @@ NAME = gameoflife
 CFLAGS = -Wall -Werror -Wextra -I./include
 
 SRC  = main.c \
+	gameoflife.c \
 
 OBJ = $(SRC:.c=.o)
 

@@ -7,8 +7,13 @@
 
 #include "my.h"
 
-int main(void)
+int main(int ac, char **av)
 {
-    printf("len = %d\n", my_strlen("hello"));
+    int fd = 0;
+    
+    fd = open_file(av[1]);
+    read_file(fd);
+    gameoflife(ac, av);
+    printf("%d", fd);
     return 0;
 }
